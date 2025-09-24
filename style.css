@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #fff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+header {
+  background: #4caf50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+main {
+  padding: 20px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#addBtn {
+  padding: 10px 20px;
+  border: none;
+  background: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#addBtn:hover {
+  background: #45a049;
+}
+
+.filter-section {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-btn, #clearAll {
+  padding: 5px 10px;
+  border: none;
+  background: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filter-btn:hover, #clearAll:hover {
+  background: #ccc;
+}
+
+#taskList {
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: #f9f9f9;
+  transition: all 0.3s;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-item button {
+  margin-left: 5px;
+  border: none;
+  background: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-item button.edit {
+  background: #3498db;
+}
+
+.task-item button:hover {
+  opacity: 0.8;
+}
+.task-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-time {
+  font-size: 12px;
+  color: #666;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #f0f2f5;
+  font-size: 14px;
+  color: #555;
+}
